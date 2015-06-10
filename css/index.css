@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-06-10 09:49:38
+ * @version $Id$
+ */
+
+h1{
+	font-family: Georgia;
+	margin-top: 50px;
+	font-weight:bolder;
+}
