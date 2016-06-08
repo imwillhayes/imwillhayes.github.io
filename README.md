@@ -5,7 +5,7 @@
 > 哈哈哈
 > 呵呵呵
 
-```
+```javascript
 var a=0;
 
 function fn(){
