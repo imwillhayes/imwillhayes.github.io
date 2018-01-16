@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+
+
+    <style id="jsbin-css">
+        #btn {
+            width: 100%;
+            height: 40px;
+            background-color: tan;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="btn"></div>
+    <script>
+        $(function () {
+            $("#btn").on("touchstart", function () {
+                wx.startRecord();
+            })
+
+            $("#btn").on("touchend", function () {
+                wx.stopRecord({
+                    success: function (res) {
+                        var localId = res.localId;
+                        alert(localId)
+                    }
+                });
+            })
+
+        })
+    </script>
+
+
+</body>
+
+</html>
